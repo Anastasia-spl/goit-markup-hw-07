@@ -1,0 +1,40 @@
+.clients {
+  padding: 9.4rem 0;
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    @include font(3.6rem, 1.17, 700);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: getColor("title-text-color");
+  }
+}
+
+.clients__item {
+  width: calc((100% - 5 * 30px) / 6);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  height: 90px;
+  border: 1px solid getColor("icon-color");
+  border-radius: 4px;
+  color: getColor("icon-color");
+
+  transition: all $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: getColor("accent-color");
+    color: getColor("accent-color");
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

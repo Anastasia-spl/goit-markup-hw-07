@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+
+  @include font(2.6rem, 1.2, 700);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &__web {
+    color: getColor("accent-color");
+  }
+
+  &--dark {
+    color: getColor("dark-logo");
+    margin-right: 93px;
+  }
+
+  &--light {
+    margin-bottom: 20px;
+
+    color: getColor("white-color");
+  }
+}

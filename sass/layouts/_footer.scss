@@ -1,0 +1,23 @@
+.footer {
+  background-color: getColor("footer-bg-color");
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.footer > .flexbox {
+  align-items: baseline;
+}
+
+.join {
+  margin-right: 93px;
+
+  &__text {
+    display: block;
+    margin-bottom: 20px;
+
+    color: getColor("white-color");
+    @include font(1.4rem, 1.14, 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}

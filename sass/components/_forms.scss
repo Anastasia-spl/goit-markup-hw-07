@@ -1,0 +1,43 @@
+.mailing-form__wrappar {
+  display: flexbox;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.mailing-form {
+  @include flexbox(center, flex-end);
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+
+    color: getColor("white-color");
+    @include font(1.4rem, 1.14, 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+.mailing-form__input {
+  min-width: 358px;
+  height: 50px;
+  padding: 1.5rem 1.6rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: getColor("white-color");
+  @include font(1.6rem, 1.14, 400);
+
+  &::placeholder {
+    @include font(1.6rem, 1.25, 400);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.follow-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
