@@ -1,6 +1,7 @@
-@import "./utils/visually-hidden";
+@import "./base/visually-hidden";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/normalize";
 @import "./base/common";
 @import "./components/logo";

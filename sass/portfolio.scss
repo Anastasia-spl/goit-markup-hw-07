@@ -1,6 +1,7 @@
-@import "./utils/visually-hidden";
+@import "./base/visually-hidden";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/normalize";
 @import "./base/common";
 @import "./components/logo";
@@ -26,8 +27,8 @@
   transition: all $transition-duration $timing-function;
   background-color: getColor("decoration-bg-color");
   color: getColor("title-text-color");
-  @include font(1.6rem, 1.62, 500);
-  letter-spacing: 0.03em;
+  @include font-basis($sec-fs, 500);
+  @include font-spacing(1.63, $main-let-space);
   text-align: center;
 
   &:hover,
@@ -51,15 +52,15 @@
     margin-top: 0px;
     margin-bottom: 4px;
     color: getColor("title-text-color");
-    @include font(1.8rem, 2, 700);
-    letter-spacing: 0.06em;
+    @include font-basis(1.8rem, $bold-fw);
+    @include font-spacing(2, $sec-let-space);
   }
 
   &__service {
     margin: 0px 0px;
     color: getColor("primary-text-color");
-    @include font(1.6rem, 1.87, 400);
-    letter-spacing: 0.03em;
+    @include font-basis($sec-fs, $main-fw);
+    @include font-spacing(1.87, $main-let-space);
   }
 }
 
@@ -110,8 +111,8 @@
   padding: 6.3rem 2.4rem;
   background-color: rgba(33, 150, 243, 0.9);
   color: getColor("white-color");
-  @include font(1.8rem, 1.56, 400);
-  letter-spacing: 0.03em;
+  @include font-basis(1.8rem, $main-fw);
+  @include font-spacing(1.56, $main-let-space);
 
   .portfolio__thumb:hover & {
     opacity: 1;

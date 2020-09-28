@@ -35,7 +35,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 4rem;
-  @include font(1.6rem, 1.14, 400);
+  @include font-basis($sec-fs, $main-fw);
+  @include font-spacing();
 }
 
 .close-modal {
@@ -75,22 +76,16 @@
 
 .modal-header {
   margin-bottom: 12px;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.15;
+  @include font-basis(2rem, $bold-fw);
+  @include font-spacing(1.15, $main-let-space);
   text-align: center;
-  letter-spacing: 0.03em;
   color: getColor("title-text-color");
 }
 
 .modal-label {
   margin-bottom: 4px;
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
+  @include font-basis(1.2rem, $main-fw);
+  @include font-spacing(1.67, 0.01);
   color: getColor("primary-text-color");
 }
 
@@ -165,11 +160,8 @@
 }
 
 .user-agreement {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font-basis($main-fs, $main-fw);
+  @include font-spacing(1.71, $main-let-space);
   color: getColor("primary-text-color");
 }
 

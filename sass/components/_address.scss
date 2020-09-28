@@ -10,9 +10,8 @@
     margin: 0px;
 
     color: getColor("white-color");
-    @include font(1.4rem, 1.71);
-    letter-spacing: 0.03em;
-    font-style: normal;
+    @include font-basis();
+    @include font-spacing(1.71);
   }
   &__contacts {
     display: block;

@@ -12,8 +12,8 @@
     margin-bottom: 20px;
 
     color: getColor("white-color");
-    @include font(1.4rem, 1.14, 700);
-    letter-spacing: 0.03em;
+    @include font-basis($main-fs, $bold-fw);
+    @include font-spacing($main-line-height, $main-let-space);
     text-transform: uppercase;
   }
 }
@@ -28,11 +28,12 @@
   border-radius: 4px;
   background-color: transparent;
   color: getColor("white-color");
-  @include font(1.6rem, 1.14, 400);
+  @include font-basis($sec-fs, $main-fw);
+  @include font-spacing($main-line-height, $main-let-space);
 
   &::placeholder {
-    @include font(1.6rem, 1.25, 400);
-    letter-spacing: 0.03em;
+    @include font-basis($sec-fs, $main-fw);
+    @include font-spacing(1.25, $main-let-space);
     color: rgba(255, 255, 255, 0.6);
   }
 }

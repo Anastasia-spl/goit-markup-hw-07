@@ -1,8 +1,13 @@
-@mixin font($fs: 1.4rem, $lh: 1.14, $fw: 400) {
-  font-family: "Roboto", sans-serif;
+@mixin font-basis($fs: $main-fs, $fw: $main-fw, $f-style: $main-f-style) {
+  font-family: $main-ff;
   font-size: $fs;
-  line-height: $lh;
   font-weight: $fw;
+  font-style: $f-style;
+}
+
+@mixin font-spacing($lh: $main-line-height, $ls: $main-let-space) {
+  line-height: $lh;
+  letter-spacing: $ls;
 }
 
 @mixin flexbox($jc: center, $ai: center) {

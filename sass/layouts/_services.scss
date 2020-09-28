@@ -6,8 +6,8 @@
     margin-top: 0px;
     margin-bottom: 50px;
 
-    @include font(3.6rem, 1.17, 700);
-    letter-spacing: 0.03em;
+    @extend %header2-main-page;
+
     text-align: center;
     color: getColor("title-text-color");
   }
@@ -34,8 +34,8 @@
   padding: 2.7rem 0;
 
   color: getColor("white-color");
-  @include font(1.4rem, 1.14, 700);
-  letter-spacing: 0.03em;
+  @include font-basis($main-fs, $bold-fw);
+  @include font-spacing($main-line-height, $main-let-space);
   text-align: center;
   text-transform: uppercase;
 }

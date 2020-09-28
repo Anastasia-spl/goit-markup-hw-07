@@ -5,8 +5,7 @@
     margin-top: 0px;
     margin-bottom: 50px;
 
-    @include font(3.6rem, 1.17, 700);
-    letter-spacing: 0.03em;
+    @extend %header2-main-page;
     text-align: center;
     color: getColor("title-text-color");
   }
