@@ -1,15 +1,3 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: react(0 0 0 0);
-  clip: rect(0px 0px 0px 0px);
-  overflow: hidden;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -18,17 +6,12 @@
   letter-spacing: 0.03em;
 }
 
-.services__title, .team__title, .clients__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 3.6rem;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
+  outline: 1px red solid;
 }
 
 :root {
@@ -46,7 +29,7 @@ body {
 }
 
 body {
-  font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 hr {
@@ -57,12 +40,16 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, pre, samp {
-  font-family: ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 1em;
 }
 
@@ -70,7 +57,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -78,34 +66,48 @@ sub, sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-[type=button], [type=reset], [type=submit], button {
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
   -webkit-appearance: button;
 }
 
-[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -117,16 +119,17 @@ progress {
   vertical-align: baseline;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -137,6 +140,18 @@ progress {
 
 summary {
   display: list-item;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: react(0 0 0 0);
+  clip: rect(0px 0px 0px 0px);
+  overflow: hidden;
 }
 
 .html {
@@ -153,7 +168,7 @@ summary {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
@@ -207,6 +222,7 @@ img {
 
 .logo {
   display: block;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -476,6 +492,8 @@ img {
 }
 
 .btn {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,21 +549,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.mailing-form__wrappar {
-  display: flexbox;
-  flex-direction: column;
-  margin-right: 12px;
-}
-
-.mailing-form {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 .mailing-form__title {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
@@ -557,7 +564,7 @@ img {
 }
 
 .mailing-form__input {
-  min-width: 358px;
+  width: 100%;
   height: 50px;
   padding: 1.5rem 1.6rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -589,15 +596,18 @@ img {
 }
 
 .wrapper-address {
-  margin-right: 70px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .address {
-  max-width: 231px;
+  width: 100%;
+  margin-bottom: 60px;
 }
 
 .address__text, .address__contacts {
   margin: 0px;
+  text-align: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
@@ -661,7 +671,7 @@ img {
 }
 
 .features {
-  padding-top: 9.4rem;
+  padding: 6rem 0;
 }
 
 .features__title {
@@ -689,11 +699,11 @@ img {
 }
 
 .features__item {
-  width: calc((100% - 3 * 30px) / 4);
+  margin: 15px;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+.features__list {
+  margin: -15px;
 }
 
 .features__icon {
@@ -710,13 +720,18 @@ img {
 }
 
 .services {
-  padding-top: 9.4rem;
-  padding-bottom: 9.4rem;
+  padding: 6rem 0;
 }
 
 .services__title {
   margin-top: 0px;
   margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
 }
@@ -752,19 +767,25 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 9.4rem;
-  padding-bottom: 9.4rem;
+  padding: 6rem 0;
 }
 
 .team__title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
 }
 
 .team__content {
-  padding: 3rem 0px;
+  padding-top: 3rem;
+  padding-bottom: 2.4rem;
 }
 
 .team__name {
@@ -778,7 +799,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .team__position {
@@ -794,34 +814,46 @@ img {
   text-align: center;
 }
 
+.team__list {
+  margin: -15px;
+}
+
 .team__item {
+  margin: 15px;
   background-color: #ffffff;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
 .clients {
-  padding: 9.4rem 0;
+  padding: 6rem 0;
 }
 
 .clients__title {
   margin-top: 0px;
   margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
 }
 
-.clients__item {
-  width: calc((100% - 5 * 30px) / 6);
+.clients__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
 
 .clients__link {
@@ -847,17 +879,16 @@ img {
   padding-bottom: 6rem;
 }
 
-.footer > .flexbox {
-  align-items: baseline;
-}
-
 .join {
-  margin-right: 93px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .join__text {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;

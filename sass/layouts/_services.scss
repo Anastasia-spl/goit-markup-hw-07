@@ -1,12 +1,17 @@
 .services {
-  padding-top: 9.4rem;
-  padding-bottom: 9.4rem;
+  padding: 6rem 0;
+  // padding-top: 9.4rem;
+  // padding-bottom: 9.4rem;
 
   &__title {
     margin-top: 0px;
     margin-bottom: 50px;
+    @include font-basis(2.8rem, $bold-fw);
+    @include font-spacing(1.17, $main-let-space);
 
-    @extend %header2-main-page;
+    // @include font-basis(3.6rem, $bold-fw);
+    // @mixin font-spacing(1.17, $main-let-space);
+    // @extend %header2-main-page;
 
     text-align: center;
     color: getColor("title-text-color");

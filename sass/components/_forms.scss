@@ -1,16 +1,16 @@
-.mailing-form__wrappar {
-  display: flexbox;
-  flex-direction: column;
-  margin-right: 12px;
-}
+// .mailing-form__wrappar {
+//   // display: flexbox;
+//   // flex-direction: column;
+//   // margin-right: 12px;
+// }
 
 .mailing-form {
-  @include flexbox(center, flex-end);
+  // @include flexbox(center, flex-end);
 
   &__title {
     display: block;
     margin-bottom: 20px;
-
+    text-align: center;
     color: getColor("white-color");
     @include font-basis($main-fs, $bold-fw);
     @include font-spacing($main-line-height, $main-let-space);
@@ -19,7 +19,8 @@
 }
 
 .mailing-form__input {
-  min-width: 358px;
+  width: 100%;
+  // min-width: 358px;
   height: 50px;
   padding: 1.5rem 1.6rem;
 

@@ -1,14 +1,18 @@
 .wrapper-address {
-  margin-right: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  // margin-right: 70px;
 }
 
 .address {
-  max-width: 231px;
+  width: 100%;
+  margin-bottom: 60px;
+  // max-width: 231px;
 
   &__text,
   &__contacts {
     margin: 0px;
-
+    text-align: center;
     color: getColor("white-color");
     @include font-basis();
     @include font-spacing(1.71);
