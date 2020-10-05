@@ -1,13 +1,19 @@
 .wrapper-address {
   margin-right: auto;
   margin-left: auto;
-  // margin-right: 70px;
+
+  @include for-size(desktop) {
+    margin-right: 70px;
+  }
 }
 
 .address {
   width: 100%;
   margin-bottom: 60px;
-  // max-width: 231px;
+
+  @include for-size(desktop) {
+    min-width: 231px;
+  }
 
   &__text,
   &__contacts {
@@ -16,6 +22,10 @@
     color: getColor("white-color");
     @include font-basis();
     @include font-spacing(1.71);
+
+    @include for-size(desktop) {
+      text-align: left;
+    }
   }
   &__contacts {
     display: block;

@@ -1,3 +1,6 @@
+.nav__list {
+  @include flexbox();
+}
 .nav__link {
   position: relative;
   display: block;

@@ -14,8 +14,21 @@
 @import "./layouts/footer";
 
 .filter-btns {
-  padding-top: 9.4rem;
-  padding-bottom: 3.4rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  @include for-size(tablet) {
+    padding-bottom: 3rem;
+  }
+  @include for-size(desktop) {
+    padding-top: 9.4rem;
+    padding-bottom: 3.4rem;
+  }
+}
+
+.filter-btns__list {
+  @include for-size(tablet) {
+    @include flexbox();
+  }
 }
 
 .filter-btns__btn {
@@ -64,17 +77,23 @@
 }
 
 .portfolio__list {
-  // @include flexbox;
-  // flex-wrap: wrap;
   margin: -15px;
+  @include for-size(tablet) {
+    @include flexbox(flex-start, stretch);
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio__card {
   margin: 15px;
-
-  // width: calc((100% - 6 * 15px) / 3);
-
   transition: box-shadow $transition-duration $timing-function;
+
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 
   &:hover,
   &:focus {

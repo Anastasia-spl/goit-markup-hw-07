@@ -27,8 +27,13 @@
   margin-bottom: 30px;
 
   color: getColor("white-color");
-  @include font-basis(4.4rem, 900);
-  @include font-spacing(1.36, $sec-let-space);
   text-align: center;
   text-transform: uppercase;
+  @include font-basis(2.6rem, 900);
+  @include font-spacing(1.62, $sec-let-space);
+
+  @include for-size(desktop) {
+    @include font-basis(4.4rem, 900);
+    @include font-spacing(1.36, $sec-let-space);
+  }
 }
