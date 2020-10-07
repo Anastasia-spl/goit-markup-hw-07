@@ -6,8 +6,9 @@
 
   &__link {
     color: getColor("primary-text-color");
-    // @include font-basis($main-fs, 500);
-    // @include font-spacing($main-line-height, 0.02em);
+
+    @include font-basis(1.8rem, 500);
+    @include font-spacing(1.17, 0.02em);
 
     @include for-size(tablet) {
       justify-content: start;
@@ -22,6 +23,9 @@
   }
 
   &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1599px) {
       margin-bottom: 10px;
     }

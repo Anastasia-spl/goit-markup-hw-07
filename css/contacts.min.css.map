@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/components/contacts.scss"
-    ],
-    "names": [],
-    "file": "contacts.min.css"
-}

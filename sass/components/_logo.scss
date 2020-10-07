@@ -13,6 +13,7 @@
   @include for-size(desktop) {
     @include font-basis(2.8rem, $bold-fw);
     @include font-spacing(1.19, $main-let-space);
+    font-family: $logo-ff;
   }
 
   &__web {
