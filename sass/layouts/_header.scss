@@ -7,14 +7,14 @@
     min-height: 80px;
   }
 
-  @include for-size(desktop) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    min-height: 80px;
-  }
+  // @include for-size(desktop) {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: 100;
+  //   min-height: 80px;
+  // }
 }
 
 .header .container {
