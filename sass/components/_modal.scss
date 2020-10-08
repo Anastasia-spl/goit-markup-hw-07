@@ -22,8 +22,13 @@
 
 .modal-w {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+
+  @include for-size(desktop) {
+    width: 528px;
+  }
+
+  // min-height: 581px;
 
   top: 50%;
   left: 50%;
@@ -160,8 +165,13 @@
 }
 
 .user-agreement {
-  @include font-basis($main-fs, $main-fw);
-  @include font-spacing(1.71, $main-let-space);
+  @include font-basis(1.2rem, $main-fw);
+  @include font-spacing(1.67, $main-let-space);
+
+  @include for-size(desktop) {
+    @include font-basis($main-fs, $main-fw);
+    @include font-spacing(1.71, $main-let-space);
+  }
   color: getColor("primary-text-color");
 }
 

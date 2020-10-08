@@ -25,8 +25,11 @@
 }
 
 .filter-btns__list {
-  @include for-size(tablet) {
-    @include flexbox();
+  @include flexbox();
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
@@ -54,6 +57,14 @@
 
 .filter-btns__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-btns__item:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio {

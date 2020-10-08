@@ -3,7 +3,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  outline: 1px red solid;
 }
 
 :root {
@@ -297,6 +296,7 @@ img {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0) scale(1);
+    z-index: 50;
   }
 }
 
@@ -524,8 +524,7 @@ img {
 
 .modal-w {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -540,6 +539,12 @@ img {
   font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1600px) {
+  .modal-w {
+    width: 528px;
+  }
 }
 
 .close-modal {
@@ -667,12 +672,23 @@ img {
 
 .user-agreement {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.67;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media (min-width: 1600px) {
+  .user-agreement {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .agreement-conditions {
@@ -1084,14 +1100,22 @@ img {
 }
 
 .services {
-  padding: 6rem 0;
+  display: none;
+  padding-top: 9.4rem;
+  padding-bottom: 9.4rem;
+}
+
+@media (min-width: 1600px) {
+  .services {
+    display: block;
+  }
 }
 
 .services__title {
   margin-top: 0px;
   margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
-  font-size: 2.8rem;
+  font-size: 3.6rem;
   font-weight: 700;
   font-style: normal;
   line-height: 1.17;

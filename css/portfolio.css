@@ -3,7 +3,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  outline: 1px red solid;
 }
 
 :root {
@@ -297,6 +296,7 @@ img {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0) scale(1);
+    z-index: 50;
   }
 }
 
@@ -783,11 +783,16 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+.filter-btns__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
   .filter-btns__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
@@ -817,6 +822,14 @@ img {
 
 .filter-btns__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-btns__item:nth-child(-n + 3) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio {
